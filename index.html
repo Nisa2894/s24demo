@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 24 - Local Services in Dhaka</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <img src="logo-placeholder.png" alt="Service 24 Logo" class="h-16">
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-gray-200">Services</a>
+                        <ul class="absolute hidden group-hover:block bg-green-600 text-white rounded shadow-lg mt-2">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Plumber</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Electrician</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">AC Mechanic</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Home Maid</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Cleaner</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Mason</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="hover:text-gray-200">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-200">Contact Us</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-gray-200">Join Us</a>
+                        <ul class="absolute hidden group-hover:block bg-green-600 text-white rounded shadow-lg mt-2">
+                            <li><a href="join-seeker.html" class="block px-4 py-2 hover:bg-green-700">Service Seeker</a></li>
+                            <li><a href="join-provider.html" class="block px-4 py-2 hover:bg-green-700">Service Provider</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Slider -->
+    <section class="swiper-container my-8">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="slide1.jpg" alt="Slide 1" class="w-full h-96 object-cover"></div>
+            <div class="swiper-slide"><img src="slide2.jpg" alt="Slide 2" class="w-full h-96 object-cover"></div>
+            <div class="swiper-slide"><img src="slide3.jpg" alt="Slide 3" class="w-full h-96 object-cover"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+
+    <!-- Service Filter (Centered) -->
+    <section class="container mx-auto my-8 px-4 flex justify-center">
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 max-w-lg w-full">
+            <select id="service-category" class="p-2 border rounded">
+                <option value="">Select Service</option>
+                <option value="Plumber">Plumber</option>
+                <option value="Electrician">Electrician</option>
+                <option value="AC Mechanic">AC Mechanic</option>
+                <option value="Home Maid">Home Maid</option>
+                <option value="Cleaner">Cleaner</option>
+                <option value="Mason">Mason</option>
+            </select>
+            <select id="area" class="p-2 border rounded">
+                <option value="">Select Area</option>
+                <option value="Dhanmondi">Dhanmondi</option>
+                <option value="Gulshan">Gulshan</option>
+                <option value="Banani">Banani</option>
+                <option value="Mirpur">Mirpur</option>
+                <option value="Uttara">Uttara</option>
+                <option value="Mohammadpur">Mohammadpur</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Service Providers -->
+    <section class="container mx-auto my-8 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="providers">
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">John Doe</h3>
+            <p><strong>Expertise:</strong> Plumber</p>
+            <p><strong>Location:</strong> Dhanmondi</p>
+            <p><strong>Status:</strong> Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567890" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567890" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">Jane Smith</h3>
+            <p><strong>Expertise:</strong> Electrician</p>
+            <p><strong>Location:</strong> Gulshan</p>
+            <p><strong>Status:</strong> Not Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567891" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567891" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">Ali Khan</h3>
+            <p><strong>Expertise:</strong> AC Mechanic</p>
+            <p><strong>Location:</strong> Banani</p>
+            <p><strong>Status:</strong> Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567892" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567892" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">Sara Ahmed</h3>
+            <p><strong>Expertise:</strong> Home Maid</p>
+            <p><strong>Location:</strong> Mirpur</p>
+            <p><strong>Status:</strong> Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567893" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567893" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">Rahim Mia</h3>
+            <p><strong>Expertise:</strong> Cleaner</p>
+            <p><strong>Location:</strong> Uttara</p>
+            <p><strong>Status:</strong> Not Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567894" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567894" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">Fatima Begum</h3>
+            <p><strong>Expertise:</strong> Mason</p>
+            <p><strong>Location:</strong> Mohammadpur</p>
+            <p><strong>Status:</strong> Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567895" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567895" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">Kamal Hossain</h3>
+            <p><strong>Expertise:</strong> Plumber</p>
+            <p><strong>Location:</strong> Gulshan</p>
+            <p><strong>Status:</strong> Not Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567896" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567896" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-xl font-bold">Nadia Rahman</h3>
+            <p><strong>Expertise:</strong> Electrician</p>
+            <p><strong>Location:</strong> Dhanmondi</p>
+            <p><strong>Status:</strong> Verified</p>
+            <div class="mt-4 flex space-x-2">
+                <a href="tel:+8801234567897" class="bg-green-600 text-white px-4 py-2 rounded">Call</a>
+                <a href="https://wa.me/+8801234567897" class="bg-green-500 text-white px-4 py-2 rounded">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container mx-auto my-8 px-4">
+        <h2 class="text-2xl font-bold mb-6 text-center">Client Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded shadow-lg">
+                <p>"Excellent plumbing service! John was punctual and professional."</p>
+                <p class="mt-2 font-bold">– Ayesha, Dhanmondi</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow-lg">
+                <p>"The electrician fixed my wiring issues quickly. Highly recommend!"</p>
+                <p class="mt-2 font-bold">– Rahim, Gulshan</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow-lg">
+                <p>"The AC mechanic was knowledgeable and efficient. Great service!"</p>
+                <p class="mt-2 font-bold">– Sumaiya, Banani</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow-lg">
+                <p>"The home maid service was outstanding. Very satisfied!"</p>
+                <p class="mt-2 font-bold">– Imran, Mirpur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Service 24 - Local Services in Dhaka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
