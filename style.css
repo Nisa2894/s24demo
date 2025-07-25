@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header nav ul li a {
+    transition: color 0.3s;
+}
+
+header nav ul li ul {
+    transition: all 0.3s;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        space-y-4;
+    }
+
+    .swiper-container {
+        height: 300px;
+    }
+}
