@@ -1,0 +1,14 @@
+{
+    "name": "service24",
+    "version": "1.0.0",
+    "description": "Service 24 - Local Services in Dhaka",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "sqlite3": "^5.0.2",
+        "multer": "^1.4.3"
+    }
+}
