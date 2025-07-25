@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Service 24</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold">Service 24 Admin Dashboard</h1>
+        </div>
+    </header>
+
+    <!-- Login Form -->
+    <section class="container mx-auto my-8 px-4" id="login-section">
+        <h2 class="text-2xl font-bold mb-6 text-center">Admin Login</h2>
+        <form id="admin-login" class="max-w-sm mx-auto bg-white p-6 rounded shadow-lg">
+            <div class="mb-4">
+                <label for="username" class="block text-sm font-bold mb-2">Username</label>
+                <input type="text" id="username" name="username" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-bold mb-2">Password</label>
+                <input type="password" id="password" name="password" class="w-full p-2 border rounded" required>
+            </div>
+            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Login</button>
+        </form>
+    </section>
+
+    <!-- Dashboard (Hidden Initially) -->
+    <section class="container mx-auto my-8 px-4 hidden" id="dashboard-section">
+        <h2 class="text-2xl font-bold mb-6 text-center">Manage Accounts</h2>
+        <h3 class="text-xl font-bold mb-4">Service Providers</h3>
+        <div id="providers-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"></div>
+        <h3 class="text-xl font-bold mb-4">Service Seekers</h3>
+        <div id="seekers-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
