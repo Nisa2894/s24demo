@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Service Provider - Service 24</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <img src="logo-placeholder.png" alt="Service 24 Logo" class="h-16">
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-gray-200">Services</a>
+                        <ul class="absolute hidden group-hover:block bg-green-600 text-white rounded shadow-lg mt-2">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Plumber</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Electrician</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">AC Mechanic</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Home Maid</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Cleaner</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-green-700">Mason</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="hover:text-gray-200">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-200">Contact Us</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-gray-200">Join Us</a>
+                        <ul class="absolute hidden group-hover:block bg-green-600 text-white rounded shadow-lg mt-2">
+                            <li><a href="join-seeker.html" class="block px-4 py-2 hover:bg-green-700">Service Seeker</a></li>
+                            <li><a href="join-provider.html" class="block px-4 py-2 hover:bg-green-700">Service Provider</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Provider Form -->
+    <section class="container mx-auto my-8 px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center">Join Service 24 as a Service Provider</h2>
+        <form id="provider-form" enctype="multipart/form-data" class="max-w-lg mx-auto bg-white p-6 rounded shadow-lg">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="photo" class="block text-sm font-bold mb-2">Upload Photo</label>
+                <input type="file" id="photo" name="photo" class="w-full p-2 border rounded" accept=".jpg,.png" required>
+            </div>
+            <div class="mb-4">
+                <label for="address" class="block text-sm font-bold mb-2">Address</label>
+                <textarea id="address" name="address" class="w-full p-2 border rounded" required></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="nid" class="block text-sm font-bold mb-2">NID/Passport Number</label>
+                <input type="text" id="nid" name="nid" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="expertise" class="block text-sm font-bold mb-2">Expertise</label>
+                <select id="expertise" name="expertise" class="w-full p-2 border rounded" required>
+                    <option value="">Select Expertise</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="AC Mechanic">AC Mechanic</option>
+                    <option value="Home Maid">Home Maid</option>
+                    <option value="Cleaner">Cleaner</option>
+                    <option value="Mason">Mason</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="experience" class="block text-sm font-bold mb-2">Years of Experience</label>
+                <input type="number" id="experience" name="experience" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="document" class="block text-sm font-bold mb-2">Upload Document (NID/Passport)</label>
+                <input type="file" id="document" name="document" class="w-full p-2 border rounded" accept=".pdf,.jpg,.png" required>
+            </div>
+            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Service 24 - Local Services in Dhaka. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="join-provider.js"></script>
+</body>
+</html>
